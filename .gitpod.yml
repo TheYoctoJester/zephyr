@@ -2,4 +2,5 @@ image: theyoctojester/zephyr-devcontainer:latest
 
 tasks:
   - name: "env setup"
-    init: "ln -s zephyr-env.sh ${HOME}/.bashrc.d/"
+    init: sudo pip3 install scripts/requirements.txt
+    command: source zephyr-env.sh && mkdir build && cd build
