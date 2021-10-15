@@ -1,4 +1,4 @@
-image: theyoctojester/zepyhr-devcontainer:latest
+image: theyoctojester/zephyr-devcontainer:latest
 
 tasks:
   - name: "env setup"
