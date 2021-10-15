@@ -1,0 +1,5 @@
+image: theyoctojester/zepyhr-devcontainer:latest
+
+tasks:
+  - name: "env setup"
+    init: "ln -s zephyr-env.sh ${HOME}/.bashrc.d/"
