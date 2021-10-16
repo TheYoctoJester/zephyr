@@ -1,4 +1,4 @@
-image: theyoctojester/zephyr-devcontainer:latest
+image: gcr.io/yp-demonstrations/zephyr-devcontainer
 
 tasks:
   - name: "env setup"
