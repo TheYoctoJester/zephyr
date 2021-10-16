@@ -1,3 +1,8 @@
+This is a fork of the main zephyr repository with some additions to allow development in https://gitpod.io
+The setup is mostly based on the information found in https://risc-v-getting-started-guide.readthedocs.io/en/latest/zephyr-qemu.html
+
+Click here to get started: https://gitpod.io#https://github.com/TheYoctoJester/zephyr/tree/gitpodification
+
 .. raw:: html
 
    <a href="https://www.zephyrproject.org">
