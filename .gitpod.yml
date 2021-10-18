@@ -3,4 +3,4 @@ image: gcr.io/yp-demonstrations/zephyr-devcontainer
 tasks:
   - name: "env setup"
     init: sudo pip3 install -r scripts/requirements.txt
-    command: source zephyr-env.sh && mkdir build && cd build
+    command: source zephyr-env.sh && mkdir -p build && cd build
