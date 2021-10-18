@@ -1,0 +1,26 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build QEMU - RISC-V 32b",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            },
+            "command": "source ${workspaceFolder}/zephyr-env.sh && cmake -DBOARD=qemu_riscv32 $ZEPHYR_BASE/samples/hello_world && make -j $(nproc)"
+        },
+        {
+            "label": "Run QEMU - RISC-V 32b",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            },
+            "dependsOn": [
+                "Build QEMU - RISC-V 32b"
+            ],
+            "command": "make run"
+        }
+    ]
+}

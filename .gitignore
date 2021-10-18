@@ -40,7 +40,6 @@ doc/doc.warnings
 .*project
 .settings
 .envrc
-.vscode
 hide-defaults-note
 venv
 .venv
@@ -53,3 +52,7 @@ TAGS
 tags
 
 .idea
+
+# To make some stuff work on gitpod demonstrations:
+.vscode/*
+!.vscode/tasks.json
